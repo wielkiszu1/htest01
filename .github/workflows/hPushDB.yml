@@ -12,7 +12,7 @@ jobs:
      - name: Run a databricks notebook
        uses: databricks/run-notebook@v0
        with:
-         local-notebook-path: /Shared/MLFlow/hGitShared
+         notebook_task: /Shared/MLFlow/hGitShared
          databricks-host: https://adb-5260745850381774.14.azuredatabricks.net
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
 
