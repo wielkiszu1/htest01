@@ -12,10 +12,6 @@ jobs:
      - name: Run a databricks notebook
        uses: databricks/run-notebook@v0
        with:
-         workspace-notebook-path: /Shared/MLFlow/hGitShared
-         databricks-host: https://adb-5260745850381774.14.azuredatabricks.net
-         databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
-
          new-cluster-json: >
            {
              "cluster_name": "HGitCluster01",
