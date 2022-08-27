@@ -10,7 +10,6 @@ jobs:
      - name: Checkout repo
        uses: actions/checkout@v2
      - name: Run a databricks notebook
-       uses: databricks/run-notebook@v0
        with:
          databricks-host: https://adb-5260745850381774.14.azuredatabricks.net
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
